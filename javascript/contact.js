@@ -36,19 +36,35 @@ const contactku2 = {
     };
 
 
-myContacts.push(contactku2)
-console.log(myContacts)
- myContacts.shift(contactku)
- console.log(myContacts)
+// myContacts.push(contactku2)
+// console.log(myContacts)
+//  myContacts.shift(contactku)
+//  console.log(myContacts)
 
 const show = myContacts.filter((a) => {
     console.log(a)
     
 })
 
+const allContact = myContacts.concat(contactku,contactku2);
+console.log(allContact)
+
+myContacts.push(contactku,contactku2)
+console.log(myContacts)
+
+let data = myContacts.forEach((data) => {
+    console.log(data);
+    
+});
+
+let data5 = myContacts[4];
+console.log(data5); 
 
 
-// const addContact = myContacts.push(contactku);
+
+// console.log(Object.values(myContacts));
+
+// const addContact = myContacts.concat(contactku);
 //     console.log(addContact);
 
 
